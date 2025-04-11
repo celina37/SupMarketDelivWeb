@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer reset {
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scroll-behavior:smooth;
+
+    }
+  }
+  @layer theme {
+    :root {
+        --navbar-width: 256px;
+      --brand-color: #18283b;
+      --brand-color-white: #f5f6fa;
+      --brand-color-lightgrey: #E5E7EB ;
+      --brand-color-darkgrey: #4B5563;
+        
+      --column-width: 1080px;
+    }
+  }
+  @layer global {
+    body {
+      margin: unset;
+      background-color: #fff;
+      font-family: "Open Sans", serif;
+      min-height: 100vh; 
+  overflow-x: hidden;
+  transition: all 0.3s ease; 
+  background-color:var(--brand-color-lightgrey);
+
+}}
+@layer modules {
+    .sidebar{
+        background-color: var(--brand-color);
+        height: auto;
+        width:20vw;
+        width:var(--navbar-width);
+        color:var(--brand-color-white);
+        position: fixed;
+       padding:30px;
+       margin:30px;
+       border-radius:15px;
+
+        
+    }
+    .content {
+      margin: 20px;
+      color: var(--brand-color);
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 80vh;
+      width: 55vw;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+      padding: 20px;
+    }
+    
+  
+  
+  
+}

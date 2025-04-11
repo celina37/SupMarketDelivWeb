@@ -1,0 +1,129 @@
+.title{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 1px solid var(--brand-color-darkgrey);
+  padding-bottom:10px;
+
+}
+.page-content{
+  margin:30px;
+}
+
+.row-group {
+  display: flex;
+  flex-direction: row;
+ gap:4em;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ 
+  margin-top: 15px;
+}
+
+.input-label {
+  font-size: 16px;
+  color: var(--brand-color-darkgrey);
+  font-weight: 600;
+}
+
+.custom-input {
+  padding: 10px;
+  border: 1px solid var(--brand-color-darkgrey);
+  border-radius: 8px;
+  width: 300px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--brand-color);
+  box-shadow: 0 0 10px rgba(24, 40, 59, 0.3);
+}
+.image-preview {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-preview img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid var(--brand-color-lightgrey);
+}
+.submit-btn{
+
+margin-top:10px;
+height:60px;
+  padding: 10px 20px;
+  background-color: var(--brand-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--brand-color-lightgrey) 0.3s ease;
+}
+.product-btn{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top:5px;
+  
+}
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+table {
+  margin-top:20px;
+  width: 100%;
+  border-collapse: collapse;
+ 
+
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  text-align: center;  
+
+}
+
+th {
+
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: #ddd;
+  padding:15px;
+  border-radius:8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+td img {
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="radio"]{
+width:1.1em;
+height:1.1em;
+  margin-left: 10px;
+ margin-right:10px;
+}

@@ -1,0 +1,27 @@
+.sidebar-content {
+    font-size: 20px;
+    gap:5px;
+    
+}
+.sidebar-content ul {
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.sidebar-content a {
+    color: var(--brand-color-white);
+    border-radius: 5px;
+
+    background-color: var(--brand-color);
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-content a:hover,
+.sidebar-content a.selected {
+    background-color: var(--brand-color-darkgrey);
+    color: var(--brand-color-lightgrey);
+    border-radius: 5px;
+}
