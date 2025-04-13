@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LocationController;
+use App\Http\Controllers\OrderController;
 
 // Routes that do not require authentication
 Route::middleware('api')->group(function () {
@@ -20,6 +21,8 @@ Route::middleware('api')->group(function () {
     Route::put('/products/{id}', [ProductController::class, 'update']);
     Route::delete('/products/{id}', [ProductController::class, 'destroy']);
     Route::post('/locations', [LocationController::class, 'store']);
+    Route::get('/locations/{user_id}', [LocationController::class, 'getUserLocations']);
+    Route::post('/orders', [OrderController::class, 'store']);
 
 });
 
